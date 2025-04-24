@@ -3,7 +3,21 @@
 This case study analyzes Metrolinx’s real estate asset portfolio using Power BI and DAX logic to assess asset performance and inform data-driven investment strategies. The goal is to identify underperforming properties, uncover root causes, and recommend actions like acquisition, divestment, or renovation.
 
 ---
+## 📑 Table of Contents
 
+- [Objective](#objective)
+- [Data Preparation & Cleaning](#data-preparation--cleaning)
+- [Tools Used](#tools-used)
+- [Key Methodology](#key-methodology)
+  - [Performance Thresholds](#performance-thresholds)
+  - [ROI Strategy Matrix (Logic-Based Recommendations)](#roi-strategy-matrix-logic-based-recommendations)
+- [Key Visuals (Screenshots in folder)](#key-visuals-screenshots-in-folder)
+- [Summary of Recommendations](#summary-of-recommendations)
+- [Strategic Insights](#️-strategic-insights)
+- [What’s Next (If More Data Was Available)](#whats-next-if-more-data-was-available)
+- [Folder Contents](#folder-contents)
+
+---
 ## 📌 Objective
 
 Evaluate a portfolio of 26 real estate assets across four property types — Industrial, Office, Residential, and Retail — to:
