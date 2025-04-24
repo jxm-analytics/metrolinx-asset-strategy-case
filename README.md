@@ -106,8 +106,8 @@ With additional data such as lease turnover dates, tenant feedback logs, or mark
 ## 🧰 Folder Contents
 
 - `.pbix` – Power BI file with full dashboard
-- `.pptx` – Strategic summary presentation
-- `/images` – Key visual screenshots
+- `.pdf` – Strategic summary presentation
+
 
 ---
 
