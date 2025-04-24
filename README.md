@@ -1,7 +1,8 @@
 # 🏢 Metrolinx Real Estate Asset Management – Portfolio Strategy Case Study
 
 This case study analyzes Metrolinx’s real estate asset portfolio using Power BI and DAX logic to assess asset performance and inform data-driven investment strategies. The goal is to identify underperforming properties, uncover root causes, and recommend actions like acquisition, divestment, or renovation.
-
+> Tools: Power BI, DAX, Excel  
+> Scope: Real estate analytics, investment scoring, executive reporting
 ---
 ## 📑 Table of Contents
 
