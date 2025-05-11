@@ -1,116 +1,114 @@
-# 🏢 Metrolinx Real Estate Asset Management – Portfolio Strategy Case Study
+# Metrolinx Asset Strategy: Power BI Investment Scoring Dashboard
 
-This case study analyzes Metrolinx’s real estate asset portfolio using Power BI and DAX logic to assess asset performance and inform data-driven investment strategies. The goal is to identify underperforming properties, uncover root causes, and recommend actions like acquisition, divestment, or renovation.
-> Tools: Power BI, DAX, Excel  
-> Scope: Real estate analytics, investment scoring, executive reporting
----
-## 📑 Table of Contents
-
-- [Objective](#objective)
-- [Data Preparation & Cleaning](#data-preparation--cleaning)
-- [Tools Used](#tools-used)
-- [Key Methodology](#key-methodology)
-  - [Performance Thresholds](#performance-thresholds)
-  - [ROI Strategy Matrix (Logic-Based Recommendations)](#roi-strategy-matrix-logic-based-recommendations)
-- [Key Visuals (Screenshots in folder)](#key-visuals-screenshots-in-folder)
-- [Summary of Recommendations](#summary-of-recommendations)
-- [Strategic Insights](#️-strategic-insights)
-- [What’s Next (If More Data Was Available)](#whats-next-if-more-data-was-available)
-- [Folder Contents](#folder-contents)
-
----
-## 📌 Objective
-
-Evaluate a portfolio of 26 real estate assets across four property types — Industrial, Office, Residential, and Retail — to:
-- Identify underperforming properties
-- Analyze factors behind low occupancy and ROI
-- Assess alignment between operating costs and income
-- Recommend tailored investment actions based on performance logic
+This project simulates a strategic asset evaluation scenario for Metrolinx, the public transit authority in Ontario. The goal was to assess the performance of real estate assets across four property types and guide decisions to acquire, hold, or divest using a standardized, data-driven scoring model.
 
 ---
 
-## 🧹 Data Preparation & Cleaning
+## Table of Contents
 
-- Removed irrelevant columns and standardized headers
-- Validated consistency of date formats and data types
-- Created new calculated fields:
-  - **Occupancy Rate** = Leased Area / Total Area
-  - **ROI (%)** = (Rental Income – Operating Costs) / Capital Expenditures
-  - **Years Since Last Renovation** = Current Year – Renovation Year
-- Verified data integrity (no duplicates or missing values)
-
----
-
-## 📊 Tools Used
-
-- Power BI (visualization, dashboarding)
-- Power Query (data transformation)
-- DAX (custom measures, logic-based classification)
-- Excel (initial audit)
+- [Project Objective](#project-objective)
+- [Tools and Techniques Used](#tools-and-techniques-used)
+- [Data Model and Metrics](#data-model-and-metrics)
+- [Business Logic and Thresholds](#business-logic-and-thresholds)
+- [Dashboard Overview](#dashboard-overview)
+- [Key Takeaways](#key-takeaways)
+- [Conclusion](#conclusion)
+- [Contact](#contact)
+- [License](#license)
 
 ---
 
-## 🧠 Key Methodology
+## Project Objective
 
-### Performance Thresholds
-Benchmarks were defined using industry standards:
-- **Occupancy**: 85%+ for Office, 90%+ for Residential, 95%+ for Industrial
-- Properties below **70% of these benchmarks** were flagged as underperforming
+To support portfolio-level decision-making at Metrolinx by building a Power BI dashboard that scores properties based on:
+- Return on Investment (ROI)
+- Capital Expenditure (CapEx)
+- Tenant Satisfaction
 
-### ROI Strategy Matrix (Logic-Based Recommendations)
-Used SWITCH + TRUE() DAX structure to categorize each property type:
-- **✅ Acquire More**: ROI > 1000%, Satisfaction > 80, CapEx < $300K
-- **❌ Consider Selling**: ROI < 500%, Satisfaction < 70, CapEx > $400K
-- **⚠️ Renovation Potential / Optimization Opportunity**: Selective conditions met
-- **⚪ Hold / Monitor**: All others
+The objective was to classify each asset into one of three categories:
+- Acquire More
+- Hold / Monitor
+- Consider Selling
 
 ---
 
-## 📈 Key Visuals (Screenshots in folder)
+## Tools and Techniques Used
 
-- Clustered bar charts by ROI, CapEx, Satisfaction
-- Bubble charts to assess Renovation Age vs Performance
-- Matrix with dynamic conditional logic and strategy icons
-- Benchmark overlay visual for Occupancy Rate vs Standards
-
----
-
-## 💡 Summary of Recommendations
-
-| Property Type | ROI | CapEx | Satisfaction | Recommendation |
-|---------------|-----|-------|--------------|----------------|
-| Industrial    | ✅ Very High | ✅ Low | ✅ High | ✅ Acquire More |
-| Residential   | ❌ Low       | ❌ High | ❌ Low  | ❌ Consider Selling |
-| Office        | ⚠️ Mid       | ❌ High | ⚠️ Borderline | ⚪ Hold / Monitor |
-| Retail        | ⚠️ Mid       | ⚠️ Borderline | ❌ Low  | ⚪ Hold / Monitor |
+- Power BI for data modeling, DAX logic, and visualization
+- DAX measures for ROI thresholds, investment logic, and sentiment weighting
+- Excel for initial data preparation and layout mapping
+- Custom logic thresholds for investment scoring based on internal performance and market-aligned benchmarks
 
 ---
 
-## 🗺️ Strategic Insights
+## Data Model and Metrics
 
-- **Industrial** assets are high performers with strong ROI and low CapEx → clear candidates for expansion.
-- **Residential** assets suffer from weak ROI and tenant satisfaction → consider divestment or redevelopment.
-- **Office/Retail** assets are mixed and may benefit from operational improvements or renovations based on market demand.
+The project used simulated portfolio data for 26 real estate assets across four property types: Industrial, Residential, Office, and Retail.
 
----
+Each asset included:
+- ROI (Return on Investment in $)
+- CapEx (Total capital invested)
+- Tenant Satisfaction (scaled score from 0 to 100)
 
-## 📌 What’s Next (If More Data Was Available)
-
-With additional data such as lease turnover dates, tenant feedback logs, or market rent benchmarks, the analysis could expand into:
-- Lease expiry risk mapping
-- Rent gap detection
-- Predictive churn modeling
-- Continuous asset health dashboards
+All metrics were standardized for cross-comparison and filtered by property type and classification.
 
 ---
 
-## 🧰 Folder Contents
+## Business Logic and Thresholds
 
-- `.pbix` – Power BI file with full dashboard
-- `.pdf` – Strategic summary presentation
+To simulate real-world investment review, the following classification logic was applied:
+
+**Acquire More:**
+- ROI > 1000
+- CapEx < 300K
+- Tenant Satisfaction > 80
+
+**Consider Selling:**
+- ROI < 500
+- CapEx > 400K
+- Tenant Satisfaction < 70
+
+**Hold / Monitor:**
+- Assets that did not meet acquire or divest thresholds but showed moderate potential or efficiency
+
+This logic was implemented using nested DAX conditions and visually displayed in the dashboard for executive clarity.
+
+---
+
+## Dashboard Overview
+
+The Power BI dashboard includes:
+
+- A summary table with dynamic filters by asset type, ROI tier, and investment classification
+- Cards showing total ROI, average CapEx, and overall satisfaction
+- Bar charts comparing property performance within and across types
+- A matrix summarizing property status with drill-down capability
 
 
 ---
 
-> Built by Jake Ma | [LinkedIn](https://www.linkedin.com/in/jake-ma-0a4278282/)  
-> Google Data Analytics Certified | Passionate about data-driven urban strategy
+## Key Takeaways
+
+- A scoring system using real estate KPIs can quickly surface underperforming assets
+- Adding tenant sentiment balances short-term ROI with long-term livability and service goals
+- Benchmarking alone isn’t enough — internal comparisons drive sharper strategy
+- Decision-makers benefit from visuals that connect financial, operational, and satisfaction metrics
+
+---
+
+## Conclusion
+
+This project reflects real-world asset management decision-making by combining financial, operational, and user experience data in a unified dashboard. It demonstrates intermediate-level Power BI and DAX skills, business-first thinking, and a clear path from raw data to stakeholder-ready recommendations.
+
+---
+
+## Contact
+
+Created by [Jake Ma](https://www.linkedin.com/in/jake-ma-0a4278282/)  
+Let’s connect if you’re hiring or want to discuss asset intelligence in public infrastructure.
+
+---
+
+## License
+
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
