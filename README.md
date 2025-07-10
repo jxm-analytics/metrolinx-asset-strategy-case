@@ -123,7 +123,7 @@ This case study demonstrates how analysts can support real-world infrastructure 
 
 ## Contact
 
-Created by [Jake Ma](https://www.linkedin.com/in/jake-ma-0a4278282/)  
+Created by [Jake Ma](https://www.linkedin.com/in/jakexm-analytics/)  
 Let’s connect if you’re hiring or want to discuss data analytics for real estate and infrastructure planning.
 
 ---
