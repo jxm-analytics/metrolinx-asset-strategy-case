@@ -1,6 +1,6 @@
-# Metrolinx Asset Strategy: Investment Scoring with Power BI
+# Public Asset Strategy: Investment Scoring with Power BI
 
-This project simulates a strategic portfolio evaluation framework for Metrolinx, focused on identifying real estate assets that are high-performing, underperforming, or borderline. The goal is to guide data-driven decisions around whether to acquire more of a given asset type, hold and monitor, or consider divesting based on key performance indicators.
+This project simulates a strategic portfolio evaluation framework for a **major Ontario transit agency**, focused on identifying real estate assets that are high-performing, underperforming, or borderline. The goal is to guide data-driven decisions around whether to acquire more of a given asset type, hold and monitor, or consider divesting based on key performance indicators.
 
 ---
 
@@ -21,24 +21,24 @@ This project simulates a strategic portfolio evaluation framework for Metrolinx,
 
 ## Project Objective
 
-To help asset managers at Metrolinx make better investment decisions by classifying 26 properties across four asset types (Industrial, Residential, Office, and Retail) using:
+To help asset managers at a **public infrastructure agency** make better investment decisions by classifying 26 properties across four asset types (Industrial, Residential, Office, and Retail) using:
 
-- Return on Investment (ROI)
-- Capital Expenditure (CapEx)
+- Return on Investment (ROI)  
+- Capital Expenditure (CapEx)  
 - Tenant Satisfaction
 
 The dashboard is designed to simulate a real estate portfolio review tool that flags properties as:
-- Acquire More
-- Hold / Monitor
+- Acquire More  
+- Hold / Monitor  
 - Consider Selling
 
 ---
 
 ## Tools and Techniques Used
 
-- **Power BI**: Data modeling, dashboard design, and interactive visuals
-- **DAX**: Custom logic for ROI classification, thresholds, and risk segmentation
-- **Excel**: Preprocessing of raw metrics and structuring of base tables
+- **Power BI**: Data modeling, dashboard design, and interactive visuals  
+- **DAX**: Custom logic for ROI classification, thresholds, and risk segmentation  
+- **Excel**: Preprocessing of raw metrics and structuring of base tables  
 
 ---
 
@@ -46,9 +46,9 @@ The dashboard is designed to simulate a real estate portfolio review tool that f
 
 Each asset record includes:
 
-- ROI: Net return in dollars  
-- CapEx: Capital investment to date  
-- Tenant Satisfaction: Proxy for livability, experience, or stakeholder support
+- **ROI**: Net return in dollars  
+- **CapEx**: Capital investment to date  
+- **Tenant Satisfaction**: Proxy for livability, experience, or stakeholder support  
 
 Data is categorized by asset type, with filters for drilling into performance by group.
 
@@ -59,17 +59,17 @@ Data is categorized by asset type, with filters for drilling into performance by
 This project applies internal benchmarking logic (rather than external market comparisons) to identify outliers and strategic actions.
 
 **Acquire More**
-- ROI > 1000
-- CapEx < 300K
-- Satisfaction > 80
+- ROI > 1000  
+- CapEx < 300K  
+- Satisfaction > 80  
 
 **Consider Selling**
-- ROI < 500
-- CapEx > 400K
-- Satisfaction < 70
+- ROI < 500  
+- CapEx > 400K  
+- Satisfaction < 70  
 
 **Hold / Monitor**
-- All other cases, including assets with mixed or borderline performance
+- All other cases, including assets with mixed or borderline performance  
 
 This logic enables stakeholders to segment assets into action buckets — helping prioritize which properties need closer monitoring, reinvestment, or replacement.
 
@@ -79,10 +79,10 @@ This logic enables stakeholders to segment assets into action buckets — helpin
 
 The Power BI dashboard includes:
 
-- KPI cards summarizing total ROI, average CapEx, and overall tenant sentiment
-- Filterable asset table by type, score tier, and recommendation
-- ROI and CapEx distribution visuals with benchmark overlays
-- Segmented matrix that cross-references satisfaction, CapEx, and ROI
+- KPI cards summarizing total ROI, average CapEx, and overall tenant sentiment  
+- Filterable asset table by type, score tier, and recommendation  
+- ROI and CapEx distribution visuals with benchmark overlays  
+- Segmented matrix that cross-references satisfaction, CapEx, and ROI  
 
 The visual layout supports both high-level summaries and detailed property-level views.
 
@@ -90,17 +90,17 @@ The visual layout supports both high-level summaries and detailed property-level
 
 ## Real-World Application
 
-This dashboard simulates a decision-support tool for capital planning teams at public infrastructure agencies like Metrolinx. It helps answer questions such as:
+This dashboard simulates a decision-support tool for capital planning teams at **public infrastructure agencies**. It helps answer questions such as:
 
-- Are we over-investing in low-return assets?
-- Which properties are most strategically scalable?
-- Where should we consider selling or reinvesting?
+- Are we over-investing in low-return assets?  
+- Which properties are most strategically scalable?  
+- Where should we consider selling or reinvesting?  
 
 Stakeholders can use the model in quarterly review meetings to:
 
-- Align capital deployment with ROI and service experience
-- Flag assets for deeper audits based on cost/return misalignment
-- Justify reinvestment into well-performing segments like Industrial
+- Align capital deployment with ROI and service experience  
+- Flag assets for deeper audits based on cost/return misalignment  
+- Justify reinvestment into well-performing segments like Industrial  
 
 The scoring framework can be adapted to any organization managing mixed-use portfolios, combining financial, operational, and user-experience metrics in one view.
 
@@ -108,10 +108,10 @@ The scoring framework can be adapted to any organization managing mixed-use port
 
 ## Key Takeaways
 
-- A scoring system using ROI, CapEx, and tenant sentiment allows faster identification of priority assets
-- Business logic is embedded directly in the DAX model for consistent evaluation
-- Power BI interactivity makes it easy to filter, drill, and explain decisions to stakeholders
-- The methodology balances financial return with service quality — aligning public and operational goals
+- A scoring system using ROI, CapEx, and tenant sentiment allows faster identification of priority assets  
+- Business logic is embedded directly in the DAX model for consistent evaluation  
+- Power BI interactivity makes it easy to filter, drill, and explain decisions to stakeholders  
+- The methodology balances financial return with service quality — aligning public and operational goals  
 
 ---
 
