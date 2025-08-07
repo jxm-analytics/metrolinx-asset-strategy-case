@@ -1,6 +1,6 @@
-# Metrolinx Asset Strategy: Investment Scoring with Power BI
+# Public Asset Strategy – Investment Scoring Model
 
-This project simulates a strategic portfolio evaluation framework for **Metrolinx**, Ontario’s regional transit agency. It focuses on identifying real estate assets that are high-performing, underperforming, or borderline. The goal is to guide data-driven decisions around whether to acquire more of a given asset type, hold and monitor, or consider divesting based on key performance indicators.
+This project demonstrates a simulated strategic portfolio evaluation framework designed for public infrastructure agencies. Using Power BI and DAX, it evaluates asset performance based on ROI, CapEx, and user sentiment, providing actionable recommendations: Acquire, Hold, or Consider Selling.
 
 ---
 
@@ -20,8 +20,7 @@ This project simulates a strategic portfolio evaluation framework for **Metrolin
 ---
 
 ## Project Objective
-
-To help asset managers at **Metrolinx** make better investment decisions by classifying 26 properties across four asset types (Industrial, Residential, Office, and Retail) using:
+To replicate how governments or agencies assess real estate assets in a capital planning context — optimizing investment based on financial return and stakeholder value:
 
 - Return on Investment (ROI)  
 - Capital Expenditure (CapEx)  
@@ -90,7 +89,7 @@ The visual layout supports both high-level summaries and detailed property-level
 
 ## Real-World Application
 
-This dashboard simulates a decision-support tool for capital planning teams at **Metrolinx**. It helps answer questions such as:
+This dashboard simulates a decision-support tool for capital planning teams. It helps answer questions such as:
 
 - Are we over-investing in low-return assets?  
 - Which properties are most strategically scalable?  
@@ -117,7 +116,7 @@ The scoring framework can be adapted to any organization managing mixed-use port
 
 ## Conclusion
 
-This case study demonstrates how analysts can support real-world infrastructure decisions using interactive BI tools. The project combines custom logic, stakeholder-facing visuals, and domain-specific thresholds to mirror how large agencies like Metrolinx assess multi-million dollar asset portfolios. It reflects intermediate-level proficiency in Power BI, business logic modeling, and capital strategy alignment.
+This case study demonstrates how analysts can support real-world infrastructure decisions using interactive BI tools. The project combines custom logic, stakeholder-facing visuals, and domain-specific thresholds to mirror how large agencies like Public assess multi-million dollar asset portfolios. It reflects intermediate-level proficiency in Power BI, business logic modeling, and capital strategy alignment.
 
 ---
 
